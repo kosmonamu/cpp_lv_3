@@ -10,8 +10,9 @@ string s;
 int main(){
     
     cin >> T;
-    string bufferflush;
-    getline(cin, bufferflush);
+    //string bufferflush;
+    //getline(cin, bufferflush);
+    cin.ignore();
 
     for(int i=0; i<T; i++){
         getline(cin, s);
