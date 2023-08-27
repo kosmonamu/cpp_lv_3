@@ -10,12 +10,13 @@ vector<string> split(string input, string delimiter){
     
     //string::npos : size_t 타입의 최대값
     //find 해당 문자열을 못 찾을 경우 string::npos를 반환
+    //substr(위치, 크기)
     while((pos = input.find(delimiter)) != string::npos){
         token = input.substr(0, pos);
         ret.push_back(token);
         input.erase(0, pos+delimiter.length());
     }
-    ret.push_back(input);
+    ret.push_back(input); // 마지막
     return ret;
 }
 

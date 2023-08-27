@@ -1,15 +1,18 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
 int main(){
-    string s = "123";
-    s[0]++;
 
-    cout << s[0] << "\n";
+    string a = "It's hard to have a sore leg";
+    reverse(a.begin(), a.end());
+    cout << a << '\n';
 
-    char a = 'a';
-    cout << (int)a << "\n";
+    reverse(a.begin(), a.end());
+    cout << a << "\n";
 
+    reverse(a.begin()+3, a.end());
+    cout << a << "\n";
     return 0;
 }
