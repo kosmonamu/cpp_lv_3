@@ -1,3 +1,5 @@
+//int printf ( const char * format, ... );
+
 #include <iostream>
 
 using namespace std;
